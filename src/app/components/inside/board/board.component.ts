@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
 import { components } from '../../../common/components';
+import { TableComponent } from '../../reusable/table/table.component';
 
 @Component({
   selector: 'app-board',
   standalone: true,
-  imports: [CommonModule, RouterModule, NgxSpinnerModule],
+  imports: [CommonModule, RouterModule, NgxSpinnerModule, TableComponent],
   templateUrl: './board.component.html',
   styleUrl: './board.component.scss',
 })
@@ -17,9 +18,9 @@ export class BoardComponent {
   constructor(
     //private auth: AuthService,
     //private router: Router,
-    private spinner: NgxSpinnerService
+    private spinner: NgxSpinnerService,
   ) {
-    console.log(components);
+    //console.log('BoardComponent constructor');
   }
 
   ngOnInit(): void {

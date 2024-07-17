@@ -1,0 +1,108 @@
+{
+    "companies": [
+      { "id": 1, "company_name": "CompanyA" },
+      { "id": 2, "company_name": "CompanyB" }
+    ],
+    "users": [
+      { "id": 1, "username": "john_doe", "password_hash": "e3afed0047b08059d0fada10f400c1e5", "email": "john@example.com", "role": "admin", "company_id": 1, "site": "SiteA" },
+      { "id": 2, "username": "jane_smith", "password_hash": "e3afed0047b08059d0fada10f400c1e5", "email": "jane@example.com", "role": "user", "company_id": 1, "site": "SiteB" },
+      { "id": 3, "username": "mike_jones", "password_hash": "e3afed0047b08059d0fada10f400c1e5", "email": "mike@example.com", "role": "user", "company_id": 2, "site": "SiteA" }
+    ],
+    "devices": [
+      { "id": 1, "device_id": "device1", "device_name": "Temperature Sensor 1", "device_status": "green", "wifi_ssid": "Network1", "wifi_password": "pass123", "email": "device1@example.com", "company_id": 1 },
+      { "id": 2, "device_id": "device2", "device_name": "Humidity Sensor 1", "device_status": "yellow", "wifi_ssid": "Network2", "wifi_password": "pass123", "email": "device2@example.com", "company_id": 1 },
+      { "id": 3, "device_id": "device3", "device_name": "Vibration Sensor 1", "device_status": "red", "wifi_ssid": "Network3", "wifi_password": "pass123", "email": "device3@example.com", "company_id": 2 }
+    ],
+    "readings": [
+    {
+      "time": "2024-07-16T08:30:00Z",
+      "device_id": "device_001",
+      "temperature": 23.5,
+      "humidity": 55.2
+    },
+    {
+      "time": "2024-07-16T08:45:00Z",
+      "device_id": "device_001",
+      "temperature": 23.6,
+      "humidity": 55.0
+    },
+    {
+      "time": "2024-07-16T09:00:00Z",
+      "device_id": "device_001",
+      "temperature": 23.7,
+      "humidity": 54.9
+    },
+    {
+      "time": "2024-07-16T09:15:00Z",
+      "device_id": "device_001",
+      "temperature": 23.8,
+      "humidity": 54.8
+    },
+    {
+      "time": "2024-07-16T09:30:00Z",
+      "device_id": "device_001",
+      "temperature": 23.9,
+      "humidity": 54.7
+    },
+    {
+      "time": "2024-07-16T08:30:00Z",
+      "device_id": "device_002",
+      "temperature": 22.5,
+      "humidity": 56.2
+    },
+    {
+      "time": "2024-07-16T08:45:00Z",
+      "device_id": "device_002",
+      "temperature": 22.6,
+      "humidity": 56.0
+    },
+    {
+      "time": "2024-07-16T09:00:00Z",
+      "device_id": "device_002",
+      "temperature": 22.7,
+      "humidity": 55.9
+    },
+    {
+      "time": "2024-07-16T09:15:00Z",
+      "device_id": "device_002",
+      "temperature": 22.8,
+      "humidity": 55.8
+    },
+    {
+      "time": "2024-07-16T09:30:00Z",
+      "device_id": "device_002",
+      "temperature": 22.9,
+      "humidity": 55.7
+    },
+    {
+      "time": "2024-07-16T08:30:00Z",
+      "device_id": "device_003",
+      "vibration": 0.02
+    },
+    {
+      "time": "2024-07-16T08:45:00Z",
+      "device_id": "device_003",
+      "vibration": 0.03
+    },
+    {
+      "time": "2024-07-16T09:00:00Z",
+      "device_id": "device_003",
+      "vibration": 0.04
+    },
+    {
+      "time": "2024-07-16T09:15:00Z",
+      "device_id": "device_003",
+      "vibration": 0.05
+    },
+    {
+      "time": "2024-07-16T09:30:00Z",
+      "device_id": "device_003",
+      "vibration": 0.06
+    }
+  ],
+    "alerts": [
+      { "id": 1, "device_id": "device2", "alert_type": "temperature_high", "timestamp": "2024-07-04T10:30:00Z" },
+      { "id": 2, "device_id": "device3", "alert_type": "vibration_high", "timestamp": "2024-07-04T10:30:00Z" }
+    ]
+  }
+  

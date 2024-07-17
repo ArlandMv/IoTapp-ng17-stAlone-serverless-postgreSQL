@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "api": "npx json-server db.json --port 8080",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -21,6 +22,7 @@
     "@supabase/supabase-js": "^1.35.6",
     "apexcharts": "^3.50.0",
     "flowbite": "^2.4.1",
+    "json-server": "^1.0.0-beta.1",
     "ngx-gravatar": "^13.0.0",
     "ngx-spinner": "^17.0.0",
     "rxjs": "~7.8.0",
