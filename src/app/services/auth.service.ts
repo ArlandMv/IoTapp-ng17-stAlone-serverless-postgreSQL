@@ -4,6 +4,16 @@ import { createClient, SupabaseClient, User } from '@supabase/supabase-js';
 import { environment } from '../../environments/environment.development';
 import { BehaviorSubject } from 'rxjs';
 
+/*Carlos Morales Dev:Angular y Supabase
+  - session() {
+    return this.supabase.auth.getSessionFromUrl
+  }
+  - signUp() 
+  - logIn()
+  - signOut()
+
+*/
+
 @Injectable({
   providedIn: 'root',
 })
@@ -41,6 +51,7 @@ export class AuthService {
   //  - this.supabase.auth.signInAnonymously();
   //  - this.supabase.auth.signInWithPassword();
   //  - this.supabase.auth.signInWithSSO();
+  //  - this.supabase.auth.getSession()
 
   // Register
   signUp(email: string, password: string) {

@@ -1,29 +1,18 @@
+import { Component, Input, input } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
 import { ReadingDTO } from '../../../common/ReadingDTO';
 import { DataService } from '../../../services/data.service';
+import { IoTReading } from '../../../common/IoTReading';
+import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-table',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, NgFor],
   templateUrl: './table.component.html',
-  styleUrl: './table.component.scss'
+  styleUrl: './table.component.scss',
 })
 export class TableComponent {
-  public readings = [];
-  constructor(private dataService: DataService){ }
-
-  ngOnInit(): void {
-    this.getData();
-  }
-  getData(){
-    this.dataService.getReadings().subscribe({
-      next: (res) => {
-        console.log(res);
-      },
-      error: console.log,
-    })
-  }
-
+  @Input({ required: true }) readings!: IoTReading[];
+  //reading = input<IoTReading>();
 }

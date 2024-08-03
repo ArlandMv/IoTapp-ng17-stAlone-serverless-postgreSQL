@@ -24,3 +24,6 @@ curl http://localhost:8080/users/1
 
 # Variables de entorno
 ng generate environments
+
+# NEXT
+ng g c management/features/iot-list -s 
